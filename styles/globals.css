@@ -17,6 +17,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+#__next {
+  position: relative;
+}
 
 * {
   box-sizing: border-box;

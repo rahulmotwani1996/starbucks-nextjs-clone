@@ -23,10 +23,6 @@ export default class MyDocument extends Document {
             body {
               background-color: #ffffff;
             }
-
-            #__next {
-              position: relative;
-            }
            
           `}</style>
         </body>
