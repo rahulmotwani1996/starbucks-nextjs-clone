@@ -47,7 +47,7 @@ function LinkWithIcon({
     const linkRef = React.useRef<HTMLAnchorElement | null>(null);
     return (
         <div className={classNames(className, classes.container)} onClick={() => linkRef.current?.click() } style={style}>
-            <a href={path} className={classes.link} ref={linkRef} target={'_blank'}>{label}</a>
+            <a href={path} className={classes.link} ref={linkRef} target={'_blank'} rel="noreferrer">{label}</a>
             <ArrowRightAlt className={classes.icon}></ArrowRightAlt>
         </div>
     )
