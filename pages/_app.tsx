@@ -19,8 +19,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
   }, []);
-
-  const getLayout = Component.getLayout || ((page: any) => <Layout>{page}</Layout>)
+  const getLayout = (Component as any).getLayout || ((page: any) => <Layout>{page}</Layout>)
 
   return (
     <React.Fragment>
