@@ -77,7 +77,7 @@ function Menus() {
     const classes = useStyles();
 
     const renderSingleStore = (store: IStore) => {
-        return (<Grid item xs={12}>
+        return (<Grid item xs={12} key={store.city}>
             <Frame>
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
             <Typography variant="h4">{store.city}</Typography>
