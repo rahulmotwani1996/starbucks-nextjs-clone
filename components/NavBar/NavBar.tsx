@@ -40,13 +40,13 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '12px',
         fontWeight: 400,
         letterSpacing: '2px',
-        '& > div': {
+        '&::after': {
             backgroundColor: theme.palette.secondary.main
 
         },
         '&:hover': {
             color: theme.palette.secondary.main,
-            '& > div': {
+            '&::after': {
                 backgroundColor: theme.palette.secondary.main
             }
         }

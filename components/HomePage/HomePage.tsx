@@ -1,8 +1,7 @@
 import { Container, Grid } from "@material-ui/core";
 import React from "react";
-import SelectCoffeeCard from "../cards/SelectCoffeeCard";
+import CommonPostCard from "../cards/CommonPostCard";
 import CompanyHeading from "../CompanyHeading/CompanyHeading";
-import NavBar from "../NavBar/NavBar";
 import NewsFeed from "../NewsFeed/NewsFeed";
 import Stories from "../Stories/Stories";
 

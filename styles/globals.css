@@ -24,3 +24,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.hoverAnim {
+
+}
+
+.hoverAnim::after {
+  display: block;
+  content: "";
+  transform-origin: right bottom;
+  transform: scaleX(0);
+  height: 1px;
+  transition: transform 0.25s ease-out;
+  background-color: red;
+
+}
+
+.hoverAnim:hover::after {
+  transform-origin: left bottom;
+  transform: scaleX(1);
+}

@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
       },
       place: {
         color: theme.palette.secondary.main,
-       textAlign: 'center',
+        textAlign: 'center',
         fontWeight: 800,
         margin: '16px 0px',
         fontSize: '14px'
@@ -48,9 +48,7 @@ function RoasteryCard({data}: IProps) {
         className={classes.image}
       />
     </div>
-    <div className={classes.place}>
-      {data.label}
-    </div>
+    <NavLink path={`/locations/${data.id}`} label={data.label} className={classes.place}/>
   
       
   </Grid>

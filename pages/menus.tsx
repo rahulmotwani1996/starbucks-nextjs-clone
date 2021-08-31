@@ -3,7 +3,7 @@ import classNames from "classnames";
 import React from "react";
 import LayoutWithPartition from "../components/layouts/layoutwithpartition";
 import LinkWithIcon from "../components/links/LinkWithIcon";
-import Frame from "../components/NewsFeed/Frame";
+import Wrapper from "../components/wrapper/Wrapper";
 
 const useStyles = makeStyles(theme => ({
     caption: {
@@ -78,12 +78,12 @@ function Menus() {
 
     const renderSingleStore = (store: IStore) => {
         return (<Grid item xs={12} key={store.city}>
-            <Frame>
+            <Wrapper>
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
             <Typography variant="h4">{store.city}</Typography>
             {store.names.map(i => <LinkWithIcon path="/" label={i} style={{fontWeight: 100}} key={i} />)}
             </div>
-            </Frame>
+            </Wrapper>
            
         </Grid>)
 
@@ -100,12 +100,12 @@ function Menus() {
                 </Typography>
             </div>
         </Grid>
-        <Grid item>
-            <Frame>
+        <Grid item xs={12}>
+            <Wrapper>
                 <div>
                     <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/132-64644.jpg" className={classes.img} />
                 </div>
-            </Frame>
+            </Wrapper>
         </Grid>
         {renderStores()}
 

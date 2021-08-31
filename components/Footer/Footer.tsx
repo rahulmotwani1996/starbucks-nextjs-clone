@@ -42,11 +42,17 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('sm')]: {
             fontSize: '12px'
         },
+        '&::after':{
+            backgroundColor: '#ffffff'
+        }
     },
     primaryLink: {
         fontSize: '14px',
         fontWeight: 800,
-        letterSpacing: '1px'
+        letterSpacing: '1px',
+        '&::after':{
+            backgroundColor: '#ffffff'
+        }
     },
     primaryLinkList: {
         display: 'flex',

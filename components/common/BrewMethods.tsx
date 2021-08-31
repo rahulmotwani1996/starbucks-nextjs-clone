@@ -58,7 +58,13 @@ const useStyles = makeStyles(theme => ({
     },
     link: {
         color: theme.palette.secondary.main,
-        fontSize: '14px'
+        fontSize: '14px',
+        '&:hover': {
+            color: theme.palette.secondary.main,
+            '&::after': {
+                backgroundColor: theme.palette.secondary.main
+            }
+        }
 
     },
     brewMethodContainer: {

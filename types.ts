@@ -9,6 +9,10 @@ export interface IStory {
     showBottomLogo?: boolean;
 }
 
+export interface ILink {
+    path: string;
+    label: string;
+}
 export interface ISelectCoffee {
     name: string;
     id: string;
@@ -38,4 +42,13 @@ export interface ICoffeeProcess {
     image3: string;
     title: string;
     description: string;
+}
+
+export interface IPost {
+    id: string;
+    imageSrc?: string;
+    imageCaption?: string;
+    cardTitle?: string;
+    cardDescription?: string;
+    links?: ILink[];
 }

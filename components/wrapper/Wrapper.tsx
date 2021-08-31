@@ -24,6 +24,7 @@ const useStyles = makeStyles(theme => ({
     labelFlexItem: {
         flexBasis: '30px',
         paddingRight: '10px',
+        textTransform: 'uppercase',
         [theme.breakpoints.down('xs')]: {
             padding: '20px 0px'
         }
@@ -31,6 +32,7 @@ const useStyles = makeStyles(theme => ({
     },
     childFlexItem: {
         flexGrow: 1,
+        maxWidth: '1000px'
     },
     label: {
         

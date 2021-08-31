@@ -29,7 +29,11 @@ const useStyles = makeStyles(theme => ({
     linkBase: {
         fontSize: '60px',
         fontWeight: 400,
-        letterSpacing: '2px'
+        letterSpacing: '2px',
+        '&::after': {
+            backgroundColor: '#ffffff',
+            height: '2px'
+        }
     }
 }))
 

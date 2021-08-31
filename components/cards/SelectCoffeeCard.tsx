@@ -29,19 +29,19 @@ const useStyles = makeStyles(theme => ({
     fontWeight: 400
   },
   link: {
-    paddingTop: theme.spacing(3),
+    paddingTop: theme.spacing(1),
     color: theme.palette.secondary.main,
     fontSize: '14px',
     fontWeight: 100,
     letterSpacing: '2px',
-    '& > div': {
+    '&::after': {
       height: '1px',
       backgroundColor: theme.palette.secondary.main
 
     },
     '&:hover': {
       color: theme.palette.secondary.main,
-      '& > div': {
+      '&::after': {
         backgroundColor: theme.palette.secondary.main
       }
     }
